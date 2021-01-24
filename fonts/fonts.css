@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'pt_sans_caption';
+    src: url('fonts/ptsanscaption-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'museo_sans_cyr';
+    src: url('fonts/museo_sans_cyr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
