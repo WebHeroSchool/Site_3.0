@@ -31,14 +31,11 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
-
-/*==============================================================*/
-
 #menu__toggle {
 	opacity: 0;
 }
 .container {
-	background: url(../img/fon/1920-left.svg) no-repeat left, url(../img/fon/1920-right.svg) no-repeat 100%;
+	background: url(../img/fon/1920-left.svg) no-repeat -2px -5px, url(../img/fon/1920-right.svg) no-repeat 100% -4px;
 }
 .wrapper {
 	max-width: 1510px;
@@ -49,7 +46,6 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 	justify-content: space-between;
 	margin-bottom: 99px;
 }
-
 .logo {
 	position: relative;
 	margin-top: 30px;
@@ -79,13 +75,12 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 	color: #504A62;
 	padding: 0 0 0 44px;
 }
-
 .menu {
 	display: inline-block;
 	margin-top: 56px;
 }
 .menu__item:last-child {
-	margin-right: 0px;
+	margin-right: 0;
 }
 .menu__item {
 	position: relative;
@@ -129,10 +124,10 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 	justify-content: center;
 }
 .app-ios {
-	background: url(../img/1.png) 0 0/100% auto no-repeat;
+	background: url(../img/app-ios.png) 0 0/100% auto no-repeat;
 }
 .app-andr {
-	background: url(../img/2.png) 0 0/100% auto no-repeat;
+	background: url(../img/app-andr.png) 0 0/100% auto no-repeat;
 }
 .app-ios,
 .app-andr {
@@ -154,7 +149,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 	top: 0;
 	left: 0;
 	width: 24px;
-	height: 98%;
+	height: 99%;
 	background-color: #fff;
 	opacity: .5;
 	transform: translateX(-28px) skewX(-10deg);
@@ -180,15 +175,12 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 	width: 31.6%;
 	height: auto;
 }
-/*==============================================================*/
-
 @media (max-width: 1650px){
 	.wrapper {
 		max-width: 1058px;
-		margin: 0 auto;
 	}
 	.container {
-		background: url(../img/fon/1366-left.svg) no-repeat left, url(../img/fon/1366-right.svg) no-repeat right;
+		background: url(../img/fon/1366-left.svg) no-repeat 0 23px, url(../img/fon/1366-right.svg) no-repeat 100% 0px;
 	}
 	.header {
 		margin-bottom: 77px;
@@ -197,7 +189,6 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 		margin-top: 31px;
 	}
 	.logo__cube {
-		top: 20%;
 		width: 22px;
 		height: 22px;
 	}
@@ -233,7 +224,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 	.app-ios:before,
 	.app-andr:before {
 		width: 17px;
-		height: 98%;
+		height: 99%;
 		transform: translateX(-20px) skewX(-10deg);
 	}
 	@keyframes move-light {
@@ -246,19 +237,13 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 	}
 	.phone {
 		width: 36%;
-		height: auto;
 	}
 }
-/*==============================================================*/
-
 @media (max-width: 1150px){
 	.wrapper {
 		max-width: 858px;
 	}
 }
-
-/*==============================================================*/
-
 @media (max-width: 993px){
 	.wrapper {
 		width: 81%;
@@ -267,10 +252,11 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 		background: none;
 	}
 	.logo {
-		margin-top: 101px;
+		min-width: 154px;
+		margin: 0 auto;
+		margin-top: 105px;
 	}
 	.logo__cube {
-		top: 20%;
 		width: 34px;
 		height: 34px;
 	}
@@ -284,9 +270,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 		color: #000;
 	}
 	.header {
-		display: flex;
-		justify-content: space-between;
-		margin-bottom: 49px;
+		margin-bottom: 14px;
 	}
 	.main__title {
 		font: 700 29px/31px pt_sans_caption, arial, helvetica, sans-serif;
@@ -320,13 +304,12 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 	}
 	.phone {
 		width: 102.5%;
-		height: auto;
 	}
 	.menu__btn {
 		display: flex;
 		align-items: center;
 		position: relative;
-		top: 44px;
+		top: 45px;
 		right: 10%;
 		width: 25px;
 		height: 3px;
@@ -372,7 +355,6 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 		margin: 0 0 25px 0;
 		display: block;
 		font: 500 30px/35px Roboto, arial, helvetica, sans-serif;
-		z-index: 1;
 	}
 	#menu__toggle:checked ~ .menu__btn > span {
 		transform: rotate(45deg);
@@ -390,13 +372,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 		right: 0;
 	}
 }
-
-/*==============================================================*/
-
 @media (max-width: 480px){
-		.header {
-		margin-bottom: 18px;
-	}
 	.main__title {
 		font: 700 24px/31px pt_sans_caption, arial, helvetica, sans-serif;
 		color: #000;
